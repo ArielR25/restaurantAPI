@@ -21,7 +21,10 @@ module.exports = (sequelize) => {
         email: {
             type: DataTypes.TEXT,
         },
-        tel: {
+        phone: {
+            type: DataTypes.TEXT,
+        },
+        street: {
             type: DataTypes.TEXT,
         },
         city: {
@@ -30,13 +33,10 @@ module.exports = (sequelize) => {
         state: {
             type: DataTypes.TEXT,
         },
-        years: {
+        lat: {
             type: DataTypes.FLOAT,
         },
-        latitude: {
-            type: DataTypes.FLOAT,
-        },
-        length: {
+        lng: {
             type: DataTypes.FLOAT,
         }
     });
