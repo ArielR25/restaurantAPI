@@ -32,8 +32,6 @@ router.put('/restaurants/put', async (req, res) => {
             res.status(404).json({restaurants: 'No existe ese restaurante'})
             return;
         }
-
-        return;
     }catch(e){
         res.status(400).json(e)
         return;
