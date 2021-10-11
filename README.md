@@ -191,7 +191,7 @@ nota: si se agrega el query name, es ignorado el query page
 
 ## UPDATE
 
-Para hacer un update, se envia por body, en un json los datos COMPLETOS del modelo.
+Para hacer un update, se envia por body, en un json los datos COMPLETOS del modelo. Donde el id es el del registro que se desea actualizar.
 
 Ejemplo:
 
