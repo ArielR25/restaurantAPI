@@ -24,7 +24,7 @@ Ejemplo:
 Ahora si el endpoint para cargar los datos es:
 
 ~~~
-http://localhost:3002/restaurantscsv
+https://arielrestaurantapi.herokuapp.com/restaurantscsv
 ~~~
 
 * por body
@@ -49,7 +49,7 @@ Para cargar una entrada manualmente, se debe eviar por body un objeto tipo json 
 En este caso, el endpoint necesario es:
 
 ~~~
-http://localhost:3002/restaurant
+https://arielrestaurantapi.herokuapp.com/restaurant
 ~~~
 
 ---
@@ -60,7 +60,7 @@ Para leer entradas, hay varias maneras, dependiendo lo que se necesite.
 
 Si quieres obtener entradas de 20 en 20, simplemente envias un query con el número que indica la sección que deseas. El número se indica en la variable page
 ~~~
-http://localhost:3002/restaurants?page=1
+https://arielrestaurantapi.herokuapp.com/restaurants?page=1
 ~~~
 
 #### Funcionamiento
@@ -128,7 +128,7 @@ Si se desea obtener los registros por el nombre del restaurante, se puede enviar
 Ejemplo:
 
 ~~~
-http://localhost:3002/restaurants?name=cas
+https://arielrestaurantapi.herokuapp.com/restaurants?name=cas
 
 encuentra 3 registros:
 
@@ -194,7 +194,7 @@ Para hacer un update, se envia por body, en un json los datos COMPLETOS del mode
 Ejemplo:
 
 ~~~
-http://localhost:3002/restaurants/put
+https://arielrestaurantapi.herokuapp.com/restaurants/put
 
 {
     "id":"851f799f-0852-439e-b9b2-df92c43e7672",
@@ -229,7 +229,7 @@ O en caso de no encontrar el id:
 Para hacer un delete, se debe enviar el id del restaurante en cuestion:
 
 ~~~
-http://localhost:3002/restaurants/delete/4e17896d-a26f-44ae-a8a4-5fbd5cde79b0
+https://arielrestaurantapi.herokuapp.com/restaurants/delete/4e17896d-a26f-44ae-a8a4-5fbd5cde79b0
 
 las respuestas son:
 * caso afirmativo:
@@ -249,23 +249,23 @@ las respuestas son:
 ### Resumen con los endpoints:
 
 #### crear
-* `http://localhost:3002/restaurantscsv`
+* `https://arielrestaurantapi.herokuapp.com/restaurantscsv`
 
-* `http://localhost:3002/restaurant`
+* `https://arielrestaurantapi.herokuapp.com/restaurant`
 
 ### leer
 
-* `http://localhost:3002/restaurants?page=1`
+* `https://arielrestaurantapi.herokuapp.com/restaurants?page=1`
 
-* `http://localhost:3002/restaurants?name=cas`
+* `https://arielrestaurantapi.herokuapp.com/restaurants?name=cas`
 
 ### actualizar
 
-* `http://localhost:3002/restaurants/put`
+* `https://arielrestaurantapi.herokuapp.com/restaurants/put`
 
 ### eliminar
 
-* `http://localhost:3002/restaurants/delete/4e17896d-a26f-44ae-a8a4-5fbd5cde79b0`
+* `https://arielrestaurantapi.herokuapp.com/restaurants/delete/4e17896d-a26f-44ae-a8a4-5fbd5cde79b0`
 
 
 
