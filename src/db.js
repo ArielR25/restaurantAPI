@@ -7,10 +7,10 @@ const {
 } = process.env;
 
 let sequelize =
-  process.env.NODE_ENV === 'production'
+  process.env.NODE_ENV === "production"
     ? new Sequelize({
         database: DB_NAME,
-        dialect: 'postgres',
+        dialect: "postgres",
         host: DB_HOST,
         port: 5432,
         username: DB_USER,
@@ -18,16 +18,16 @@ let sequelize =
         pool: {
           max: 3,
           min: 1,
-          idle: 10000
+          idle: 10000,
         },
-        dialecOptions: {
+        dialectOptions: {
           ssl: {
             require: true,
-            rejectUnauthorized: false
+            rejectUnauthorized: false,
           },
-          keepAlive: true
+          keepAlive: true,
         },
-        ssl: true
+        ssl: true,
       })
     :  new Sequelize(
         `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/restaurant`,
