@@ -67,9 +67,9 @@ https://arielrestaurantapi.herokuapp.com/restaurants?page=1
 
 page    resgistros
 
-0       1 al 20
-1       21 al 40
-2       41 al 60
+page=0 devuelve 1 al 20
+page=1 devuelve 21 al 40
+page=2 devuelve 41 al 60
 
 etc
 
